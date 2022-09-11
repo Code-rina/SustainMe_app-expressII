@@ -1,9 +1,12 @@
 import React from "react";
+
 import './Home.css';
+
 
 function Home () {
 
     return (
+
         <div className="login-main-container">
             <div className="home-logo-div">
                 <h1 className="h1_motto">Your neighborhood sustainably</h1>

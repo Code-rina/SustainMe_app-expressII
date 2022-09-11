@@ -23,12 +23,13 @@ function Navigation({ isLoaded }){
   }
 
   return (
-    <ul>
-      <li>
-        <NavLink exact to="/">Home</NavLink>
+      <div className="nav-main-container">
+        <NavLink className="logoish"exact to="/">SustainMe</NavLink>
+        <NavLink className="tab-nav"exact to="/about">About</NavLink>
+        <NavLink className="tab-nav"exact to="/nearbyPlaces">Nearby Places</NavLink>
+        <NavLink className="tab-nav"exact to="/events">Events</NavLink>
         {isLoaded && sessionLinks}
-      </li>
-    </ul>
+    </div>
   );
 }
 
